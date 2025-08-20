@@ -1,0 +1,55 @@
+🚀 BayirExpress RAG Chatbot
+
+BayirExpress RAG is an intelligent Retrieval-Augmented Generation (RAG) chatbot built to help users quickly find and interact with transport announcements .
+
+It combines:
+
+FastAPI → backend API with retrieval + LLM integration.
+
+CSV Data Pipeline → announcements data as the knowledge base.
+
+Streamlit → modern and interactive chat interface.
+
+Docker & Docker Compose → easy deployment.
+
+📂 Project Structure
+bayirExpress_chatbot/
+│
+├── RAG/
+│   ├── app.py               # FastAPI backend
+│   ├── utils.py             # RAG utilities (embeddings, search, etc.)
+│   ├── requirements.txt     # Python dependencies
+│   └── data/
+│       └── annonces.csv     # Dataset of transport announcements
+│
+├── streamlit_app.py         # Streamlit chat interface
+├── Dockerfile               # Dockerfile for FastAPI
+├── docker-compose.yml       # Compose setup for API + (optionally UI)
+└── README.md                # This file
+
+
+🎨 Features
+
+🔍 RAG-based retrieval → answers grounded in annonces.csv
+
+📊 Transport announcement search → departure, arrival, price/kg, etc.
+
+💬 Chat interface → Streamlit UI for easy interaction
+
+🐳 Dockerized backend → portable and easy to deploy
+
+⚡ FastAPI API → JSON responses for chatbot integration
+
+🛠️ Tech Stack
+
+FastAPI
+
+Streamlit
+
+LangChain
+ (for RAG pipeline)
+
+Docker
+
+Pandas
+
