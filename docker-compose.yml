@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  bayir-rag:
+    build: .
+    container_name: bayir-rag
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/data:/app/app/data   # Monter les données pour mise à jour facile

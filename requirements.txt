@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+requests
